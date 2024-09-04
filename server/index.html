@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleSavant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>StyleSavant</h1>
+    </header>
+    <div class="container">
+        <div id="chat-box" class="chat-box"></div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type a message..." list="suggestions">
+            <datalist id="suggestions">
+                <option value="What should I wear?"></option>
+                <option value="Latest fashion trends"></option>
+                <option value="Accessories for me"></option>
+            </datalist>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
